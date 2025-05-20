@@ -7,7 +7,7 @@
     --cor-de-fundo: #00030c;
 
     --fonte: "Inter", sans-serif;
-    --size-titulo: 3rem;
+    --size-titulo: 2.5rem;
     --size-promocao: 1.75rem;
     --size-sub-texto: 0.75rem;
     --size-button: 1rem;
@@ -27,9 +27,11 @@
 body {
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte);
-    font-weight: var(--weight-regular);
     color: var(--branco-principal);
+    font-weight: var(--weight-regular);
+    font-size: var(--size-button);
 }
+
 p{
     
     color: var(--cinza-secundario);
@@ -50,18 +52,6 @@ p{
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
-}
-.secundario{
-    justify-content: center;
-}
-.terciario{
-    grid-template-columns: 33.3% 33.3% 33.3%;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
@@ -69,17 +59,6 @@ section {
     margin: 0 6em;
 }
 
-.apresentacao{
-    color: var(--branco-principal);
-    font-family: var(--fonte);
-    font-size: var(--size-titulo);
-    font-weight: var(--weight-bold);
-    text-align: left;
-    margin: 0 7.5rem 0 0 ;
-}
-.lingua{
-    margin: 0 0 2em 7.5rem;
-}
 .imagem__combo {
     margin: 1.375em 0 3.375em 0;
 }
@@ -88,15 +67,10 @@ section {
     background-color: var(--botao-azul);
     border-radius: 8px;
     padding: 1em;
-    color: var(--branco-principal);
     font-family: var(--fonte);
-    font-size: var(--size-button);
     display: block;
     margin-bottom: 1em;
-}
-.menor{
-    padding: 1em;
-    margin-bottom: 1em;
+    color: var(--branco-principal);
 }
 
 .botao__simples {
@@ -119,6 +93,77 @@ section {
     margin: 0.625em;
 }
 
+
+
+
+
+
+
+
+
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.img__dispositivo{
+    width: 80%;
+}
+
+.combo__apresentacao{
+    color: var(--branco-principal);
+    font-family: var(--fonte);
+    font-size: var(--size-titulo);
+    font-weight: var(--weight-bold);
+    text-align: left;
+    padding: 2em;
+}
+
+.titulo__apresentacao{
+margin-bottom: 0.2em;
+}
+
+.texto__apresentacao{
+    color: var(--cinza-secundario);
+
+}
+
+
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__lista{
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    margin: 5em 0 9.06em 0;
+}
+
+
+
+.dispositivos__titulo{
+    font-size: var(--size-titulo);
+    color: var(--branco-principal);
+}
+
+.menor{
+    font-family: var(--fonte);
+    font-size: var(--size-button);
+    display: inline-block;
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    font-weight: regular;
+    padding-top: 1em;
+}
+
+
+
+
+
 .texto__titulo {
     color: var(--branco-principal);
     font-family: var(--fonte);
@@ -127,9 +172,7 @@ section {
 }
 
 
-.dispositivo{
-    margin: 0 0 0 10.31em;
-}
+
 .telas{
     margin: 0 27.6rem 0 4.3rem;
 }
@@ -147,11 +190,13 @@ footer {
     color: var(--branco-principal);
     font-family: var(--fonte);
     size: var(--size-sub-texto);
+    margin-top: 2.54em;
 }
 
 .rodape__menu__link {
     margin: 1em;
     text-decoration: none;
+    color: var(--branco-principal);
 
 }
 
@@ -160,7 +205,8 @@ footer {
     color: var(--cinza-secundario);
     font-family: var(--fonte);
     size: var(--size-rodape);
+    margin: 0 7.5em 6.18em;
 }
 .rodape__texto{
-    margin: 1.5rem;
+    margin: 1.5em;
 }

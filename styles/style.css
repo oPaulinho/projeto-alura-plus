@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
+    /* Cores principais */
     --branco-principal: #ffffff;
     --cinza-secundario: #c0c0c0;
     --botao-azul: #167bf7;
@@ -8,6 +9,7 @@
     --botao1-mouse: #167bf7c5;
     --botao2-mouse: #34343594;
 
+    /* Tipografia */
     --fonte: "Inter", sans-serif;
     --size-titulo: 2.5rem;
     --size-promocao: 1.75rem;
@@ -19,13 +21,14 @@
     --weight-bold: 500;
 }
 
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-
 }
 
+/* Estilos do body */
 body {
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte);
@@ -34,21 +37,22 @@ body {
     font-size: var(--size-button);
 }
 
+/* Estilo para parágrafos */
 p {
-
     color: var(--cinza-secundario);
     font-family: var(--fonte);
     font-size: var(--size-button);
     font-weight: var(--weight-regular);
 }
 
+/* Container principal em grid */
 .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
-
 }
 
+/* Imagem de fundo na primeira seção */
 .principal {
     background-image: url(../assets/Background.png);
     background-repeat: no-repeat;
@@ -57,19 +61,23 @@ p {
     text-align: center;
 }
 
+/* Segunda coluna com conteúdo */
 .secundario {
     align-items: center;
     margin: 0 10em;
 }
 
+/* Título da apresentação */
 .titulo__apresentacao {
     margin-bottom: 0.2em;
 }
 
+/* Texto descritivo da apresentação */
 .texto__apresentacao {
     color: var(--cinza-secundario);
 }
 
+/* Container de destaque do combo */
 .combo {
     margin: 0 6em;
 }
@@ -84,6 +92,7 @@ p {
     padding: 2em;
 }
 
+/* Botão azul principal */
 .botao {
     background-color: var(--botao-azul);
     border-radius: 8px;
@@ -98,6 +107,7 @@ p {
     background-color: #5799e9;
 }
 
+/* Botão com borda branca */
 .botao__simples {
     text-decoration: none;
     background-color: transparent;
@@ -108,13 +118,14 @@ p {
     border-radius: 8px;
     padding: 1em;
     color: var(--branco-principal);
-    font-weight: regular;
+    font-weight: var(--weight-regular);
 }
 
 .botao__simples:hover {
     background-color: var(--botao2-mouse);
 }
 
+/* Texto pequeno usado em botões ou descrições */
 .menor {
     font-family: var(--fonte);
     font-size: var(--size-button);
@@ -122,10 +133,11 @@ p {
     border-radius: 8px;
     padding: 1em;
     color: var(--branco-principal);
-    font-weight: regular;
+    font-weight: var(--weight-regular);
     padding-top: 1em;
 }
 
+/* Aviso de regulamento */
 .regulamento {
     color: var(--cinza-secundario);
     font-family: var(--fonte);
@@ -133,10 +145,12 @@ p {
     margin: 0.625em;
 }
 
+/* Imagens principais */
 .img__dispositivo {
     width: 80%;
 }
 
+/* Telas e notebook com margens específicas */
 .telas {
     margin: 0 27.6rem 0 4.3rem;
 }
@@ -145,6 +159,7 @@ p {
     margin: 0 0 0 8.81rem;
 }
 
+/* Lista de dispositivos */
 .dispositivos {
     text-align: center;
 }
@@ -161,6 +176,7 @@ p {
     color: var(--branco-principal);
 }
 
+/* Título de seções */
 .texto__titulo {
     color: var(--branco-principal);
     font-family: var(--fonte);
@@ -168,12 +184,14 @@ p {
     font-weight: var(--weight-bold);
 }
 
+/* Rodapé */
 footer {
     text-align: center;
     flex-direction: row;
     justify-content: center;
 }
 
+/* Links do rodapé */
 .rodape__links {
     text-decoration: none;
     color: var(--branco-principal);
@@ -187,7 +205,6 @@ footer {
     margin: 1em;
     text-decoration: none;
     color: var(--branco-principal);
-
 }
 
 .rodape__menu__link:hover {
@@ -198,6 +215,7 @@ footer {
     color: purple;
 }
 
+/* Texto de direitos autorais */
 .rodape__direitos__autorais {
     text-align: center;
     color: var(--cinza-secundario);
@@ -210,6 +228,7 @@ footer {
     margin: 1.5em;
 }
 
+/* RESPONSIVO para telas até 768px */
 @media screen and (max-width: 768px) {
     .container {
         display: block;
@@ -218,7 +237,6 @@ footer {
 
     .imagem__combo {
         width: 50vw;
-
     }
 
     .combo {
@@ -226,13 +244,14 @@ footer {
     }
 
     .secundario {
-        margin: 0;
+        margin: 0 ;
         text-align: center;
     }
 
     .img__dispositivo,
     .telas {
         width: 50vw;
+        margin: 0;
     }
 
     .combo__apresentacao {
@@ -242,8 +261,6 @@ footer {
     .dispositivos__lista {
         display: block;
     }
-
-    .rodape__links {}
 
     .rodape__direitos__autorais {
         margin: 2em;
